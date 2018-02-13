@@ -25,4 +25,13 @@ public class Model {
     public List<String> list(){
         return model.stream().map(User::getName).collect(Collectors.toList());
     }
+    public void set(String name, String new_name){
+        for(User user : model) if (user.getName().equals(name)) user.setName(new_name);
+    }
+    public void remove(String name){
+        User user = null;
+        for (User user1 : model) if (user1.getName().equals(name)) user = user1;
+        model.remove(user);
+
+    }
 }

@@ -25,4 +25,28 @@
         <servlet-name>list</servlet-name>
         <url-pattern>/list</url-pattern>
     </servlet-mapping>
+
+    <!-- remove servlet -->
+    <servlet>
+        <servlet-name>remove</servlet-name>
+        <servlet-class>app.servlets.RemoveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>remove</servlet-name>
+        <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+
+    <!-- set servlet -->
+    <servlet>
+        <servlet-name>set</servlet-name>
+        <servlet-class>app.servlets.SetServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>set</servlet-name>
+        <url-pattern>/set</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
